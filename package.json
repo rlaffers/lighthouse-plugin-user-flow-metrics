@@ -1,0 +1,19 @@
+{
+  "name": "lighthouse-plugin-user-flow-metrics",
+  "author": "Richard Laffers",
+  "license": "ISC",
+  "private": true,
+  "version": "0.0.0",
+  "main": "plugin.js",
+  "module": "plugin.js",
+  "type": "commonjs",
+  "devDependencies": {
+    "lighthouse": "^9.6.7"
+  },
+  "peerDependencies": {
+    "lighthouse": "^9.6.7"
+  },
+  "volta": {
+    "node": "14.19.3"
+  }
+}
