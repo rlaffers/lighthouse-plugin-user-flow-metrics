@@ -2,7 +2,6 @@
   "name": "lighthouse-plugin-user-flow-metrics",
   "author": "Richard Laffers",
   "license": "MIT",
-  "private": true,
   "version": "1.0.0",
   "main": "plugin.js",
   "module": "plugin.js",
