@@ -12,6 +12,7 @@
     "lint:fix": "eslint --fix plugin.js audits/",
     "format": "prettier --write README.md plugin.js audits/**/*.{js,mjs,cjs}"
   },
+  "files": ["package.json", "plugin.js", "README.md", "audits/*.js", "LICENSE"],
   "devDependencies": {
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
