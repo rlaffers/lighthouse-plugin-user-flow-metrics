@@ -133,7 +133,10 @@ class UserFlowMetricsAudit extends Audit {
       0,
     )
 
-    const score = Math.max(1 - metrics.reduce((tot, x) => tot + x.weightedPenalty, 0), 0)
+    const score = Math.max(
+      1 - metrics.reduce((tot, x) => tot + x.weightedPenalty, 0),
+      0,
+    )
 
     return {
       score,
