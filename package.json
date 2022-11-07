@@ -10,16 +10,11 @@
     "lint": "eslint plugin.js audits/",
     "lint:fix": "eslint --fix plugin.js audits/",
     "format": "prettier --write README.md plugin.js audits/**/*.{js,mjs,cjs}",
+    "format:check": "prettier --check README.md plugin.js audits/**/*.{js,mjs,cjs}",
     "prepare": "husky install",
     "commit": "cz"
   },
-  "files": [
-    "package.json",
-    "plugin.js",
-    "README.md",
-    "audits/*.js",
-    "LICENSE"
-  ],
+  "files": ["package.json", "plugin.js", "README.md", "audits/*.js", "LICENSE"],
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
