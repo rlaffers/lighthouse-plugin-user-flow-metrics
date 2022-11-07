@@ -10,7 +10,8 @@
     "lint": "eslint plugin.js audits/",
     "lint:fix": "eslint --fix plugin.js audits/",
     "format": "prettier --write README.md plugin.js audits/**/*.{js,mjs,cjs}",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "files": [
     "package.json",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -39,5 +42,10 @@
   },
   "volta": {
     "node": "16.18.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
