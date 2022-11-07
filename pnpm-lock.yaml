@@ -4,6 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.2.0
   '@commitlint/config-conventional': ^17.2.0
   commitizen: ^4.2.5
+  cz-conventional-changelog: ^3.3.0
   eslint: ^8.25.0
   eslint-config-prettier: ^8.5.0
   eslint-config-standard: ^17.0.0
@@ -20,6 +21,7 @@ devDependencies:
   '@commitlint/cli': 17.2.0
   '@commitlint/config-conventional': 17.2.0
   commitizen: 4.2.5
+  cz-conventional-changelog: 3.3.0
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0_eslint@8.27.0
   eslint-config-standard: 17.0.0_cyo7mwdgoypgk7zxnkwskmm2fq
