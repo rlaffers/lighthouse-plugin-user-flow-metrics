@@ -1,9 +1,12 @@
 name: Lint and check code format
 on:
+  workflow_dispatch:
   push:
-    branches: [ $default-branch ]
+    branches:
+      - master
   pull_request:
-    branches: [ $default-branch ]
+    branches:
+      - master
 
 jobs:
   lint:
