@@ -9,9 +9,16 @@
   "scripts": {
     "lint": "eslint plugin.js audits/",
     "lint:fix": "eslint --fix plugin.js audits/",
-    "format": "prettier --write README.md plugin.js audits/**/*.{js,mjs,cjs}"
+    "format": "prettier --write README.md plugin.js audits/**/*.{js,mjs,cjs}",
+    "prepare": "husky install"
   },
-  "files": ["package.json", "plugin.js", "README.md", "audits/*.js", "LICENSE"],
+  "files": [
+    "package.json",
+    "plugin.js",
+    "README.md",
+    "audits/*.js",
+    "LICENSE"
+  ],
   "devDependencies": {
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
@@ -21,6 +28,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.1",
     "lighthouse": "^9.6.7",
     "prettier": "^2.7.1"
   },
