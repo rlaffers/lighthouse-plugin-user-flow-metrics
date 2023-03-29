@@ -14,13 +14,7 @@
     "prepare": "husky install",
     "commit": "cz"
   },
-  "files": [
-    "package.json",
-    "plugin.js",
-    "README.md",
-    "audits/*.js",
-    "LICENSE"
-  ],
+  "files": ["package.json", "plugin.js", "README.md", "audits/*.js", "LICENSE"],
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
@@ -35,11 +29,11 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.1",
-    "lighthouse": "^9.6.7",
+    "lighthouse": "^10.1.0",
     "prettier": "^2.7.1"
   },
   "peerDependencies": {
-    "lighthouse": "^9.6.7"
+    "lighthouse": "^10.0.2"
   },
   "volta": {
     "node": "18.14.2"
