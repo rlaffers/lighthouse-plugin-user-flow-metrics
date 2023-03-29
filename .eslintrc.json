@@ -13,5 +13,11 @@
     "es6": true,
     "browser": true
   },
-  "plugins": ["prettier", "import"]
+  "plugins": ["prettier", "import"],
+  "rules": {
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      { "ignores": ["dynamicImport", "modules"] }
+    ]
+  }
 }

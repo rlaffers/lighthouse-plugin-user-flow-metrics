@@ -3,9 +3,8 @@
   "author": "Richard Laffers",
   "license": "MIT",
   "version": "1.0.0",
-  "main": "plugin.js",
-  "module": "plugin.js",
-  "type": "commonjs",
+  "exports": "./plugin.js",
+  "type": "module",
   "scripts": {
     "lint": "eslint plugin.js audits/",
     "lint:fix": "eslint --fix plugin.js audits/",
@@ -42,5 +41,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": " >=14.13.1 || >=16.0.0"
   }
 }

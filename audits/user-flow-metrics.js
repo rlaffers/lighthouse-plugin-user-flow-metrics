@@ -1,5 +1,5 @@
-const Audit = require('lighthouse').Audit
-const fs = require('fs')
+import { Audit } from 'lighthouse'
+import fs from 'fs'
 
 let budgets = {}
 if (process.env.LIGHTHOUSE_USER_FLOW_BUDGETS) {
@@ -198,4 +198,4 @@ class UserFlowMetricsAudit extends Audit {
   }
 }
 
-module.exports = UserFlowMetricsAudit
+export default UserFlowMetricsAudit

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   audits: [
     { path: 'lighthouse-plugin-user-flow-metrics/audits/user-flow-metrics' },
   ],
