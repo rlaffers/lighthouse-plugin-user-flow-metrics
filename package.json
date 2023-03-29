@@ -2,7 +2,7 @@
   "name": "lighthouse-plugin-user-flow-metrics",
   "author": "Richard Laffers",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "./plugin.js",
   "exports": {
     ".": "./plugin.js",
@@ -17,7 +17,13 @@
     "prepare": "husky install",
     "commit": "cz"
   },
-  "files": ["package.json", "plugin.js", "README.md", "audits/*.js", "LICENSE"],
+  "files": [
+    "package.json",
+    "plugin.js",
+    "README.md",
+    "audits/*.js",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
