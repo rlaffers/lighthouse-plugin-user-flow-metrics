@@ -3,7 +3,11 @@
   "author": "Richard Laffers",
   "license": "MIT",
   "version": "2.0.0",
-  "exports": "./plugin.js",
+  "main": "./plugin.js",
+  "exports": {
+    ".": "./plugin.js",
+    "./audits/user-flow-metrics": "./audits/user-flow-metrics.js"
+  },
   "type": "module",
   "scripts": {
     "lint": "eslint plugin.js audits/",
@@ -13,13 +17,7 @@
     "prepare": "husky install",
     "commit": "cz"
   },
-  "files": [
-    "package.json",
-    "plugin.js",
-    "README.md",
-    "audits/*.js",
-    "LICENSE"
-  ],
+  "files": ["package.json", "plugin.js", "README.md", "audits/*.js", "LICENSE"],
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
